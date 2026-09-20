@@ -7,7 +7,7 @@
 **[직접 체험하기 ↗](https://www.phishing-signal.site/)** · [판단과 행동의 흐름](docs/architecture.md) · [검증 결과와 한계](docs/evaluation.md) · [연구에서 제품까지](docs/journey.md)
 
 <p align="center">
-  <img src="assets/cover.png" alt="피싱 신호등 — 이 문자, 믿어도 될까? 받은 문자나 메시지를 붙여넣고 내용 전체에서 위험 신호를 확인해 보세요." width="100%" />
+  <img src="assets/cover.png" alt="피싱 신호등 — 이 문자, 믿어도 될까? AI가 위험을 찾지 못해도, 송금·앱 설치 요구는 한 번 더 확인해요." width="100%" />
 </p>
 
 <br>
@@ -119,7 +119,7 @@ KLUE RoBERTa-base를 피싱 문맥에 맞게 파인튜닝하고 ONNX로 변환�
 
 ## 개발에 활용한 AI
 
-ChatGPT/Codex를 제품 구현, 회귀 검증, 기록 정리와 문서화에 활용했습니다. 제품에서 사용자의 연락을 분류하는 AI는 별도로 파인튜닝한 RoBERTa 모델이며, 대화형 AI 도구의 응답을 그대로 서비스 판정으로 사용하지 않습니다.
+ChatGPT/Codex를 제품 구현, 회귀 검증, 기록 정리와 문서화에 활용했습니다. 표지 이미지 편집에는 ChatGPT의 이미지 생성 기능을 사용했습니다. 제품에서 사용자의 연락을 분류하는 AI는 별도로 파인튜닝한 RoBERTa 모델이며, 대화형 AI 도구의 응답을 그대로 서비스 판정으로 사용하지 않습니다.
 
 <br>
 <br>
