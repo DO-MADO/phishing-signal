@@ -1,6 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
 <title id="title">피싱 신호등: AI 판정에서 행동 확인까지</title>
 <desc id="desc">Dangerous와 Hold는 유지합니다. Safe만 규칙 근거를 확인하고 근거가 있으면 Hold로 보정합니다. 근거가 없고 피해 상황을 선택하지 않았을 때 사용자에게 행동을 확인합니다. 이미 피해가 있다면 모델을 기다리지 않고 대응하며 Safe 질문은 생략합니다.</desc>
+<defs><filter id="helper-shadow" x="-20%" y="-20%" width="140%" height="160%" color-interpolation-filters="sRGB">
+<feDropShadow in="SourceGraphic" dx="0" dy="1" stdDeviation="1" flood-color="rgb(16 24 40)" flood-opacity="0.04" result="shadow1"/>
+<feDropShadow in="SourceGraphic" dx="0" dy="8" stdDeviation="12" flood-color="rgb(16 24 40)" flood-opacity="0.04" result="shadow2"/>
+<feMerge><feMergeNode in="shadow2"/><feMergeNode in="shadow1"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
 <rect width="1600" height="900" fill="#f8fafc"/>
 <rect x="72.48979591836735" y="38.48979591836735" width="47.0204081632653" height="47.0204081632653" rx="10.775510204081632" fill="#101A2B" stroke="#29364A" stroke-width="1"/>
 <rect x="87.18367346938776" y="45.3469387755102" width="17.632653061224488" height="33.30612244897959" rx="8.816326530612244" fill="white" stroke="none" stroke-width="1"/>
@@ -12,7 +16,7 @@
 <text x="72" y="148.0" font-family="&quot;Noto Sans KR&quot;, -apple-system, BlinkMacSystemFont, &quot;Apple SD Gothic Neo&quot;, &quot;Segoe UI&quot;, sans-serif" font-size="44" font-weight="700" fill="#101828">AI가 놓칠 수 있기에, 행동을 한 번 더 확인해요</text>
 <text x="72" y="193.5" font-family="&quot;Noto Sans KR&quot;, -apple-system, BlinkMacSystemFont, &quot;Apple SD Gothic Neo&quot;, &quot;Segoe UI&quot;, sans-serif" font-size="24" font-weight="400" fill="#596579">문맥 분석부터 행동 확인까지, 내 브라우저에서 진행해요.</text>
 <text x="72" y="249.5" font-family="&quot;Noto Sans KR&quot;, -apple-system, BlinkMacSystemFont, &quot;Apple SD Gothic Neo&quot;, &quot;Segoe UI&quot;, sans-serif" font-size="24" font-weight="600" fill="#101828">받은 연락을 붙여넣어요</text>
-<rect x="72" y="282" width="312" height="378" rx="14.0" fill="#ffffff" stroke="#d5dae3" stroke-width="1"/>
+<rect x="72" y="282" width="312" height="378" rx="14.0" fill="#ffffff" stroke="none" stroke-width="1" filter="url(#helper-shadow)"/>
 <text x="98" y="336.0" font-family="&quot;Noto Sans KR&quot;, -apple-system, BlinkMacSystemFont, &quot;Apple SD Gothic Neo&quot;, &quot;Segoe UI&quot;, sans-serif" font-size="32" font-weight="700" fill="#101828">AI가 문맥을</text>
 <text x="98" y="378.0" font-family="&quot;Noto Sans KR&quot;, -apple-system, BlinkMacSystemFont, &quot;Apple SD Gothic Neo&quot;, &quot;Segoe UI&quot;, sans-serif" font-size="32" font-weight="700" fill="#101828">읽어요</text>
 <text x="98" y="421.5" font-family="&quot;Noto Sans KR&quot;, -apple-system, BlinkMacSystemFont, &quot;Apple SD Gothic Neo&quot;, &quot;Segoe UI&quot;, sans-serif" font-size="20" font-weight="400" fill="#596579">KLUE RoBERTa · C3 v2</text>
@@ -30,7 +34,7 @@
 <polyline points="384,575 432,575 432,499 512,499" fill="none" stroke="#b36a00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 <polyline points="503.4747547794049,504.2268722893066 512,499 503.4747547794049,493.7731277106934" fill="none" stroke="#b36a00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 <text x="512" y="423.0" font-family="&quot;Noto Sans KR&quot;, -apple-system, BlinkMacSystemFont, &quot;Apple SD Gothic Neo&quot;, &quot;Segoe UI&quot;, sans-serif" font-size="22" font-weight="600" fill="#7a4d00">Safe일 때만 추가 확인</text>
-<rect x="512" y="447" width="344" height="127" rx="14.0" fill="#ffffff" stroke="#b36a00" stroke-width="1"/>
+<rect x="512" y="447" width="344" height="127" rx="14.0" fill="#ffffff" stroke="none" stroke-width="1" filter="url(#helper-shadow)"/>
 <text x="538" y="495.0" font-family="&quot;Noto Sans KR&quot;, -apple-system, BlinkMacSystemFont, &quot;Apple SD Gothic Neo&quot;, &quot;Segoe UI&quot;, sans-serif" font-size="27" font-weight="700" fill="#101828">엄격한 규칙으로 확인해요</text>
 <text x="538" y="536.0" font-family="&quot;Noto Sans KR&quot;, -apple-system, BlinkMacSystemFont, &quot;Apple SD Gothic Neo&quot;, &quot;Segoe UI&quot;, sans-serif" font-size="21" font-weight="400" fill="#596579">명확한 행동 요구만 확인해요</text>
 <polyline points="684,574 684,607" fill="none" stroke="#b36a00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -41,7 +45,7 @@
 <text x="884" y="484.5" font-family="&quot;Noto Sans KR&quot;, -apple-system, BlinkMacSystemFont, &quot;Apple SD Gothic Neo&quot;, &quot;Segoe UI&quot;, sans-serif" font-size="21" font-weight="600" fill="#596579">+ 피해 미선택</text>
 <polyline points="856,520 1028,520" fill="none" stroke="#aeb7c5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 <polyline points="1019.474754779405,525.2268722893066 1028,520 1019.474754779405,514.7731277106934" fill="none" stroke="#aeb7c5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-<rect x="1028" y="282" width="500" height="378" rx="14.0" fill="#ffffff" stroke="#d5dae3" stroke-width="1"/>
+<rect x="1028" y="282" width="500" height="378" rx="14.0" fill="#ffffff" stroke="none" stroke-width="1" filter="url(#helper-shadow)"/>
 <text x="1056" y="334.5" font-family="&quot;Noto Sans KR&quot;, -apple-system, BlinkMacSystemFont, &quot;Apple SD Gothic Neo&quot;, &quot;Segoe UI&quot;, sans-serif" font-size="31" font-weight="700" fill="#101828">이런 요청을 받았나요?</text>
 <text x="1056" y="377.5" font-family="&quot;Noto Sans KR&quot;, -apple-system, BlinkMacSystemFont, &quot;Apple SD Gothic Neo&quot;, &quot;Segoe UI&quot;, sans-serif" font-size="23" font-weight="400" fill="#596579">송금 · 정보 전달 · 앱/기기 접근</text>
 <rect x="1056" y="407" width="444" height="99" rx="10" fill="#fff7d6" stroke="none" stroke-width="1"/>
@@ -58,6 +62,4 @@
 <polyline points="917,733 917,794" fill="none" stroke="#d92d20" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
 <text x="950" y="746.5" font-family="&quot;Noto Sans KR&quot;, -apple-system, BlinkMacSystemFont, &quot;Apple SD Gothic Neo&quot;, &quot;Segoe UI&quot;, sans-serif" font-size="23" font-weight="500" fill="#b42318">모델 로딩·분석 실패와 무관하게 안내해요</text>
 <text x="950" y="786.5" font-family="&quot;Noto Sans KR&quot;, -apple-system, BlinkMacSystemFont, &quot;Apple SD Gothic Neo&quot;, &quot;Segoe UI&quot;, sans-serif" font-size="23" font-weight="500" fill="#b42318">피해 상황을 선택하면 행동 질문은 생략해요</text>
-<text x="72" y="868.5" font-family="&quot;Noto Sans KR&quot;, -apple-system, BlinkMacSystemFont, &quot;Apple SD Gothic Neo&quot;, &quot;Segoe UI&quot;, sans-serif" font-size="20" font-weight="500" fill="#596579">분석 실패·입력 길이 초과 → 분석 불가</text>
-<text x="778" y="868.5" font-family="&quot;Noto Sans KR&quot;, -apple-system, BlinkMacSystemFont, &quot;Apple SD Gothic Neo&quot;, &quot;Segoe UI&quot;, sans-serif" font-size="20" font-weight="500" fill="#596579">Safe는 발신자·링크·거래의 안전 인증이 아니에요</text>
 </svg>
