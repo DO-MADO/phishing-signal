@@ -9,7 +9,7 @@
 원티드 AI Championship 2026 출품작 · 제작 박건호 · 2026.09.20 기준
 
 <p align="center">
-  <img src="assets/cover.png" alt="실제 운영 화면 — AI 분석 후에도 송금·정보 전달·앱 접근 요구를 사용자에게 확인합니다." width="100%" />
+  <img src="assets/cover.png" alt="피싱 신호등 — 이 문자, 믿어도 될까? 받은 문자나 메시지를 붙여넣고 내용 전체에서 위험 신호를 확인해 보세요." width="100%" />
 </p>
 
 ## 이 장면부터 확인해 주세요
