@@ -11,7 +11,10 @@
 첫 분석에는 약 **223MB 모델 다운로드**가 필요합니다. 네트워크와 기기에 따라 준비 시간이 걸립니다. [체험 순서와 예시 문구 ↓](#직접-체험해-보세요)
 
 <p align="center">
-  <img src="assets/cover.png" alt="피싱 신호등 — 이 문자, 믿어도 될까? AI가 위험을 찾지 못해도, 송금·앱 설치 요구는 한 번 더 확인해요." width="100%" />
+  <picture>
+    <source media="(prefers-reduced-motion: reduce)" srcset="assets/cover.png" />
+    <img src="assets/cover.svg" alt="피싱 신호등 — 이 문자, 믿어도 될까? AI가 위험을 찾지 못해도, 송금·앱 설치 요구는 한 번 더 확인해요." width="100%" />
+  </picture>
 </p>
 
 <br>
