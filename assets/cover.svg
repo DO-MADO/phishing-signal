@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="1672" height="940" viewBox="0 0 1672 940" role="img" aria-labelledby="cover-title cover-description">
   <title id="cover-title">피싱 신호등 — 이 문자, 믿어도 될까?</title>
-  <desc id="cover-description">AI가 위험을 찾지 못해도, 송금·앱 설치 요구는 한 번 더 확인해요. 오른쪽 신호등이 한 번 점등된 뒤 원래 표지로 유지됩니다.</desc>
+  <desc id="cover-description">AI가 위험을 찾지 못해도, 송금·앱 설치 요구는 한 번 더 확인해요. 오른쪽 신호등이 등장한 뒤 빨강·노랑·초록 점등을 반복합니다.</desc>
   <!-- cover.png 원본을 포함해 외부 이미지·폰트·스크립트 없이 표시합니다. -->
   <style>
     .logo-reveal, .light-pulse { opacity: 0; }
     @media (prefers-reduced-motion: no-preference) {
       .logo-reveal { animation: logo-reveal 1800ms ease-out 1 both; }
-      .light-red { animation: light-red 1800ms ease-in-out 1 both; }
-      .light-amber { animation: light-amber 1800ms ease-in-out 1 both; }
-      .light-green { animation: light-green 1800ms ease-in-out 1 both; }
+      .light-red { animation: light-red 3600ms ease-in-out infinite; }
+      .light-amber { animation: light-amber 3600ms ease-in-out infinite; }
+      .light-green { animation: light-green 3600ms ease-in-out infinite; }
     }
     @keyframes logo-reveal {
       0% { opacity: 1; }
       24%, 100% { opacity: 0; }
     }
     @keyframes light-red {
-      0%, 22%, 44%, 100% { opacity: 0; }
-      29%, 33% { opacity: 1; }
+      0%, 11%, 22%, 100% { opacity: 0; }
+      14.5%, 16.5% { opacity: 1; }
     }
     @keyframes light-amber {
-      0%, 36%, 58%, 100% { opacity: 0; }
-      43%, 47% { opacity: 1; }
+      0%, 18%, 29%, 100% { opacity: 0; }
+      21.5%, 23.5% { opacity: 1; }
     }
     @keyframes light-green {
-      0%, 50%, 72%, 100% { opacity: 0; }
-      57%, 61% { opacity: 1; }
+      0%, 25%, 36%, 100% { opacity: 0; }
+      28.5%, 30.5% { opacity: 1; }
     }
   </style>
   <defs>

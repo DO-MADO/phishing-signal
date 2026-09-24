@@ -1,6 +1,27 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1120" height="434" viewBox="0 0 1120 434" role="img" aria-labelledby="title desc">
   <title id="title">Safe 이후에도 실제 행동 요구를 확인합니다</title>
   <desc id="desc">배송 안내 시연의 동작을 정리한 설명용 도식입니다. 최종 Safe이고 피해 상황을 선택하지 않았을 때 돈 보내기, 정보 전달, 앱 또는 기기 접근을 요구받았는지 묻습니다. 모르겠어요를 선택하면 모델 라벨은 바뀌지 않고 행동 보류와 공식 경로 확인을 안내합니다.</desc>
+  <style>
+    @media (prefers-reduced-motion: no-preference) {
+      .selection-highlight { animation: selection-highlight 4400ms ease-in-out infinite; }
+      .arrow-highlight { animation: arrow-highlight 4400ms ease-in-out infinite; }
+      .result-highlight { animation: result-highlight 4400ms ease-in-out infinite; }
+    }
+    @keyframes selection-highlight {
+      0%, 4%, 17.5%, 100% { opacity: 0; }
+      8%, 12.5% { opacity: 1; }
+    }
+    @keyframes arrow-highlight {
+      0%, 13% { opacity: 0; stroke-dashoffset: 100; }
+      15% { opacity: 1; stroke-dashoffset: 100; }
+      24.5% { opacity: 1; stroke-dashoffset: 0; }
+      30%, 100% { opacity: 0; stroke-dashoffset: 0; }
+    }
+    @keyframes result-highlight {
+      0%, 26%, 50%, 100% { opacity: 0; }
+      33%, 40% { opacity: 0.85; }
+    }
+  </style>
   <rect width="1120" height="434" rx="14" fill="#f8fafc"/>
   <g font-family="'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Segoe UI', sans-serif">
     <text x="32" y="51" font-size="30" font-weight="700" fill="#101828">Safe 이후에도 실제 요구를 확인합니다</text>
@@ -14,13 +35,16 @@
     <rect x="58" y="291" width="100" height="44" rx="8" fill="#f1f3f6"/>
     <rect x="169" y="291" width="100" height="44" rx="8" fill="#f1f3f6"/>
     <rect x="280" y="291" width="196" height="44" rx="8" fill="#fff7d6"/>
+    <rect class="selection-highlight" x="280" y="291" width="196" height="44" rx="8" fill="#ffe08a" stroke="#d9a441" stroke-width="2" opacity="0" aria-hidden="true"/>
     <text x="108" y="321" text-anchor="middle" font-size="23" fill="#596579">있어요</text>
     <text x="219" y="321" text-anchor="middle" font-size="23" fill="#596579">없어요</text>
     <text x="378" y="321" text-anchor="middle" font-size="23" font-weight="700" fill="#7a4d00">모르겠어요 ✓</text>
 
     <path d="M524 237H596M584 225L596 237L584 249" fill="none" stroke="#b36a00" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <path class="arrow-highlight" d="M524 237H596M584 225L596 237L584 249" pathLength="100" fill="none" stroke="#e0a02e" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="100" stroke-dashoffset="100" opacity="0" aria-hidden="true"/>
 
     <rect x="618" y="112" width="470" height="249" rx="14" fill="#fff7d6"/>
+    <rect class="result-highlight" x="618" y="112" width="470" height="249" rx="14" fill="#ffe8a1" stroke="#d9a441" stroke-width="2" opacity="0" aria-hidden="true"/>
     <text x="644" y="151" font-size="20" font-weight="600" fill="#7a4d00">선택 후 안내 · 행동 보류</text>
     <text x="644" y="194" font-size="29" font-weight="700" fill="#101828">무엇을 요청하는지</text>
     <text x="644" y="231" font-size="29" font-weight="700" fill="#101828">먼저 확인해 주세요</text>
