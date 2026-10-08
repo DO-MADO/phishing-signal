@@ -8,7 +8,11 @@
 
 **1인 개발** · 기획 · UI 설계 · 모델 학습 · 웹 구현 · 배포
 
-**[직접 체험하기 ↗](https://www.phishing-signal.site/)** · [판단과 행동의 흐름](docs/architecture.md) · [검증 결과와 한계](docs/evaluation.md) · [연구에서 제품까지](docs/journey.md)
+**[서비스 소개 ↗](https://www.phishing-signal.site/)** · **[연락 확인 ↗](https://www.phishing-signal.site/check)** · [신뢰와 데이터](https://www.phishing-signal.site/trust) · [판단과 행동의 흐름](docs/architecture.md) · [검증 결과와 한계](docs/evaluation.md)
+
+2026년 10월 8일, 소개와 데이터 안내를 새로 구성했습니다.<br/>
+받은 연락·위험 신호·다음 행동이 이어지는 스크롤 장면과 모바일 탐색을 제공합니다.<br/>
+[화면 변경과 확인 범위 →](docs/branding.md) · [연구에서 제품까지 →](docs/journey.md)
 
 <br>
 
@@ -106,7 +110,7 @@ KLUE RoBERTa-base를 피싱 문맥에 맞게 파인튜닝하고 ONNX로 변환�
 
 ## 직접 체험해 보세요
 
-[연락 확인](https://www.phishing-signal.site/)에서 화면의 예시 버튼을 선택하거나 아래 문구를 붙여넣고 **위험 신호 확인하기**를 누릅니다.<br/>
+[연락 확인](https://www.phishing-signal.site/check)에서 화면의 예시 버튼을 선택하거나 아래 문구를 붙여넣고 **위험 신호 확인하기**를 누릅니다.<br/>
 예시 버튼이 보이지 않는 화면에서도 같은 문구로 체험할 수 있습니다.
 
 **1. 검찰 사칭 — 위험한 요구를 확인합니다.**
@@ -130,7 +134,7 @@ KLUE RoBERTa-base를 피싱 문맥에 맞게 파인튜닝하고 ONNX로 변환�
 
 <br>
 
-**3. [긴급 대응](https://www.phishing-signal.site/?screen=incident) — 연락 분석 없이 대응 순서를 확인합니다.**
+**3. [긴급 대응](https://www.phishing-signal.site/check?screen=incident) — 연락 분석 없이 대응 순서를 확인합니다.**
 
 이미 한 행동을 선택하고 **대응 보기**를 누릅니다.<br/>
 시연 중 실제 전화·신고 버튼을 누를 필요는 없습니다.
@@ -225,6 +229,7 @@ ChatGPT/Codex는 제품 구현, 회귀 검증, 기록 정리, 문서화에 사�
 - [평가 결과·실행물 식별·알려진 한계](docs/evaluation.md)
 - [연구에서 제품으로 이어진 결정](docs/journey.md)
 - [직접 체험할 시연 가이드](docs/demo.md)
+- [소개·신뢰 화면 변경과 모바일 확인 범위](docs/branding.md)
 - [모델·기술 출처와 라이선스](docs/attribution.md)
 
 연락 분석은 참고 정보입니다.<br/>

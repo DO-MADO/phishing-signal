@@ -1,8 +1,10 @@
 # 직접 체험하기
 
-[← 제품 소개](../README.md) · [서비스 열기](https://www.phishing-signal.site/)
+[← 제품 소개](../README.md) · [연락 확인 열기](https://www.phishing-signal.site/check)
 
 가입 없이 웹에서 체험할 수 있습니다.<br/>
+홈페이지 첫 화면은 [서비스 소개](https://www.phishing-signal.site/)이며, 위 링크로 분석 화면에 바로 들어갈 수 있습니다.<br/>
+원문의 처리 범위와 필요한 통신은 [신뢰와 데이터](https://www.phishing-signal.site/trust)에서 확인할 수 있습니다.<br/>
 첫 분석에는 약 223MB 모델을 다운로드하므로 네트워크와 기기에 따라 시간이 걸립니다.<br/>
 9월 20일 한 데스크톱 환경에서는 첫 분석 약 30초, 같은 탭 후속 분석 약 1초가 관측됐습니다.<br/>
 걸리는 시간은 사용 환경에 따라 달라집니다.
@@ -50,7 +52,7 @@
 
 ## 3. 연락 분석 없이 긴급 대응
 
-[긴급 대응](https://www.phishing-signal.site/?screen=incident)에서 “돈을 보내거나 상품권 코드를 알려줬어요”를 선택하고 **선택한 1건 대응 보기**를 누릅니다.<br/>
+[긴급 대응](https://www.phishing-signal.site/check?screen=incident)에서 “돈을 보내거나 상품권 코드를 알려줬어요”를 선택하고 **선택한 1건 대응 보기**를 누릅니다.<br/>
 선택한 상황에 따른 대응 순서를 볼 수 있습니다.<br/>
 시연 중에는 실제 전화·신고 버튼을 누를 필요가 없습니다.
 
