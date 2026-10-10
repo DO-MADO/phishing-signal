@@ -23,10 +23,7 @@
 <hr>
 
 <p align="center">
-  <picture>
-    <source media="(prefers-reduced-motion: reduce)" srcset="assets/cover.png" />
-    <img src="assets/cover.svg" alt="피싱 신호등 — 이 문자, 믿어도 될까? AI가 위험을 찾지 못해도, 송금·앱 설치 요구는 한 번 더 확인해요." width="100%" />
-  </picture>
+  <img src="assets/cover.svg" alt="피싱 신호등 — 이 문자, 믿어도 될까? AI가 위험을 찾지 못해도, 송금·앱 설치 요구는 한 번 더 확인해요." width="100%" />
 </p>
 
 <br>
