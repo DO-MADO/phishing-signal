@@ -5,6 +5,9 @@
     <filter id="shadow" x="-20%" y="-20%" width="140%" height="160%" color-interpolation-filters="sRGB">
       <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#24344D" flood-opacity=".09"/>
     </filter>
+    <clipPath id="arrow-reveal" clipPathUnits="userSpaceOnUse">
+      <rect class="path-window" x="842" y="507" width="96" height="44"/>
+    </clipPath>
     <g id="message">
       <path d="M14 13h36a10 10 0 0 1 10 10v21a10 10 0 0 1-10 10H27l-12 7V54h-1A10 10 0 0 1 4 44V23a10 10 0 0 1 10-10Z" fill="#F79009"/>
       <path d="M14 9h36a10 10 0 0 1 10 10v21a10 10 0 0 1-10 10H27l-12 7V50h-1A10 10 0 0 1 4 40V19A10 10 0 0 1 14 9Z" fill="#FEC84B"/>
@@ -18,16 +21,21 @@
   </defs>
   <style>
     text { font-family: 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif; }
-    .choice-pulse, .result-pulse { opacity: 0; }
-    .path-pulse { stroke-dasharray: 128; stroke-dashoffset: 128; }
+    .choice-pulse, .path-pulse { opacity: 0; }
     @media (prefers-reduced-motion: no-preference) {
       .choice-pulse { animation: choose 4.8s ease-in-out infinite; }
+      .path-window { animation: trace 4.8s ease-in-out infinite; }
       .path-pulse { animation: connect 4.8s ease-in-out infinite; }
-      .result-pulse { animation: respond 4.8s ease-in-out infinite; }
+      .result-status { animation: status-arrive 4.8s ease-in-out infinite; }
+      .result-title { animation: title-arrive 4.8s ease-in-out infinite; }
+      .result-copy { animation: copy-arrive 4.8s ease-in-out infinite; }
     }
     @keyframes choose { 0%, 6%, 40%, 100% { opacity: 0; } 16%, 27% { opacity: 1; } }
-    @keyframes connect { 0%, 24% { stroke-dashoffset: 128; opacity: 1; } 44%, 57% { stroke-dashoffset: 0; opacity: 1; } 68%, 100% { stroke-dashoffset: 0; opacity: 0; } }
-    @keyframes respond { 0%, 42%, 82%, 100% { opacity: 0; } 53%, 67% { opacity: 1; } }
+    @keyframes trace { 0%, 24% { width: 0; } 44%, 100% { width: 96px; } }
+    @keyframes connect { 0%, 23% { opacity: 0; } 24%, 58% { opacity: 1; } 68%, 100% { opacity: 0; } }
+    @keyframes status-arrive { 0%, 44%, 96%, 100% { opacity: .72; transform: translateY(8px); } 53%, 84% { opacity: 1; transform: translateY(0); } }
+    @keyframes title-arrive { 0%, 50%, 98%, 100% { opacity: .72; transform: translateY(8px); } 61%, 86% { opacity: 1; transform: translateY(0); } }
+    @keyframes copy-arrive { 0%, 58%, 100% { opacity: .72; transform: translateY(8px); } 69%, 88% { opacity: 1; transform: translateY(0); } }
   </style>
   <rect width="1600" height="900" rx="32" fill="#FFFFFF"/>
   <g fill="#101828">
@@ -56,18 +64,23 @@
     <text x="112" y="710" font-size="20" fill="#667085">실제로 받은 요청을 직접 확인합니다.</text>
 
     <path d="M846 529h85m-14-14 14 14-14 14" fill="none" stroke="#D1DBEB" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-    <path class="path-pulse" d="M846 529h85m-14-14 14 14-14 14" fill="none" stroke="#528BFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"/>
+    <path class="path-pulse" d="M846 529h85m-14-14 14 14-14 14" fill="none" stroke="#528BFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#arrow-reveal)" aria-hidden="true"/>
 
     <rect x="968" y="284" width="560" height="470" rx="36" fill="#101828" filter="url(#shadow)"/>
-    <rect class="result-pulse" x="970" y="286" width="556" height="466" rx="34" fill="none" stroke="#84ADFF" stroke-width="3" aria-hidden="true"/>
-    <g transform="translate(1009 330) scale(1.1)"><use href="#phone"/></g>
-    <text x="1107" y="358" font-size="20" fill="#B2CCFF">다음 행동</text>
-    <text x="1107" y="395" font-size="27" font-weight="700" fill="#FFFFFF">행동 보류</text>
-    <text x="1012" y="475" font-size="36" font-weight="700" letter-spacing="-1" fill="#FFFFFF">무엇을 요청하는지</text>
-    <text x="1012" y="523" font-size="36" font-weight="700" letter-spacing="-1" fill="#FFFFFF">먼저 확인해 주세요.</text>
+    <g class="result-status">
+      <g transform="translate(1017 343) scale(.78)"><use href="#phone"/></g>
+      <text x="1090" y="358" font-size="20" fill="#B2CCFF">다음 행동</text>
+      <text x="1090" y="395" font-size="27" font-weight="700" fill="#FFFFFF">행동 보류</text>
+    </g>
+    <g class="result-title">
+      <text x="1012" y="475" font-size="36" font-weight="700" letter-spacing="-1" fill="#FFFFFF">무엇을 요청하는지</text>
+      <text x="1012" y="523" font-size="36" font-weight="700" letter-spacing="-1" fill="#FFFFFF">먼저 확인해 주세요.</text>
+    </g>
     <path d="M1012 559h472" stroke="#30435F"/>
-    <text x="1012" y="612" font-size="25" fill="#D0D9E8">송금·정보 전달·앱 설치는 보류하고</text>
-    <text x="1012" y="652" font-size="25" fill="#D0D9E8">알고 있던 공식 경로에서 확인합니다.</text>
+    <g class="result-copy">
+      <text x="1012" y="612" font-size="25" fill="#D0D9E8">송금·정보 전달·앱 설치는 보류하고</text>
+      <text x="1012" y="652" font-size="25" fill="#D0D9E8">알고 있던 공식 경로에서 확인합니다.</text>
+    </g>
     <text x="72" y="837" font-size="25" font-weight="600">답변은 다음 행동을 안내합니다.</text>
     <text x="1528" y="837" text-anchor="end" font-size="23" fill="#667085">모델 라벨은 바꾸지 않습니다.</text>
   </g>

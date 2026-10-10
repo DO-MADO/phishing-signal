@@ -87,10 +87,6 @@ KLUE RoBERTa-base를 피싱 문맥에 맞게 파인튜닝하고 ONNX로 변환�
 
 ## AI와 규칙, 사람이 맡는 일이 다릅니다
 
-<img src="assets/flow.png" alt="브라우저 AI의 문맥 분류, Safe에 한정한 규칙 보정, 사용자 행동 확인, 독립적인 긴급 대응의 흐름" width="100%" />
-
-[흐름도 확대 보기: 벡터 SVG](assets/flow.svg) · [3200×1800 PNG](assets/flow.png)
-
 | 역할 | 맡기는 일 |
 |---|---|
 | 한국어 문맥 모델 | 입력 문구를 Dangerous / Safe / Hold로 분류 |
