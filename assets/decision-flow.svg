@@ -118,7 +118,7 @@
     <path d="M64 910h1472" stroke="#293B53"/>
     <text x="64" y="962" font-size="20" fill="#98A9C1">이미 송금·정보 전달·앱 설치를 했다면</text>
     <text x="64" y="1000" font-size="25" font-weight="600" fill="#BDCADD">분석을 기다리지 않고 긴급 대응으로.</text>
-    <text x="1022" y="962" font-size="19" fill="#98A9C1">모델 로딩·분석 실패와 관계없이 이용</text>
-    <text x="1022" y="1000" font-size="19" fill="#98A9C1">피해 상황을 선택하면 Safe 질문 생략</text>
+    <text x="1536" y="962" text-anchor="end" font-size="19" fill="#98A9C1">모델 로딩·분석 실패와 관계없이 이용</text>
+    <text x="1536" y="1000" text-anchor="end" font-size="19" fill="#98A9C1">피해 상황을 선택하면 Safe 질문 생략</text>
   </g>
 </svg>
